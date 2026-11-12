@@ -1,0 +1,12 @@
+iim42652_gyro:
+  ros__parameters:
+    spi_bus: 0
+    spi_device: 0  # CE0: /dev/spidev0.0
+    spi_speed_hz: 100000
+    frame_id: imu_link
+    full_scale_dps: 250.0
+    odr_hz: 100.0
+    gyro_bias_rad_s: [0.0, 0.0, 0.0]
+    angular_velocity_variance: 0.0  # all-zero covariance means unknown
+    integration_max_dt: 0.1  # seconds; skip intervals longer than this
+    integration_reference_frame: imu_initial
